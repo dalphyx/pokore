@@ -39,13 +39,13 @@ gulp.task('postcss', () => {
     }))
     .pipe(postcss([
       pokore.autoprefixer({ browsers: ['last 1 version'] }),
-      pokore.sorting({ 'sort-order': cssortie })
+      pokore.sorting({ 'sort-order': pokore.cssortie })
     ]))
     .pipe(rename({ extname: '.css' }))
     .pipe(gulp.dest('./dest'))
 })
 
-``` 
+```
 
 Sugarss file: a.sss:
 
@@ -80,11 +80,11 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-  
+
 /**
- * Other Styles from normalize.css
+ * Other styles from normalize.css
  */
- 
+
 .c, .a {
   color: #fff
 }
@@ -104,6 +104,6 @@ html {
   list-style: none
 }
 ```
-## License 
- 
+## License
+
 MIT

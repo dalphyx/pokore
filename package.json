@@ -29,11 +29,9 @@
     "postcss-css-reset": "^1.0.2",
     "postcss-easy-import": "^1.0.1",
     "postcss-extend": "^1.0.4",
+    "postcss-property-lookup": "^1.2.1",
     "postcss-size": "^1.0.0",
     "postcss-sorting": "^1.6.1",
     "sugarss": "^0.1.4"
-  },
-  "devDependencies": {
-    "postcss-property-lookup": "^1.2.1"
   }
 }

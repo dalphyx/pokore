@@ -58,6 +58,7 @@ Sugarss file: a.sss:
   @extend .c
   tab-size: 1px
   width: 40px
+  margin-left: @width
   box-shadow: 0 0 1px #222.1
 
 .b
@@ -91,6 +92,7 @@ html {
 
 .a {
   width: 40px;
+  margin-left: 40px;
   -moz-tab-size: 1px;
        tab-size: 1px;
   box-shadow: 0 0 1px rgba(34, 34, 34, 0.1)

@@ -15,7 +15,7 @@ Collection for postcss nyan~
 * [postcss-easy-import](https://github.com/TrySound/postcss-easy-import)
 * [postcss-css-reset](https://github.com/baiyaaaaa/postcss-css-reset)
 * [postcss-color-alpha](https://github.com/avanes/postcss-color-alpha)
-
+* [postcss-property-lookup](https://github.com/simonsmith/postcss-property-lookup)
 
 ## Usage
 Gulp:
@@ -33,7 +33,8 @@ gulp.task('postcss', () => {
       pokore.colorAlpha,
       pokore.extend,
       pokore.size,
-      pokore.reset
+      pokore.reset,
+      pokere.postcss-property-lookup
     ], {
       parser: pokore.sugarss
     }))
@@ -44,7 +45,6 @@ gulp.task('postcss', () => {
     .pipe(rename({ extname: '.css' }))
     .pipe(gulp.dest('./dest'))
 })
-
 ```
 
 Sugarss file: a.sss:

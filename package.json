@@ -32,5 +32,8 @@
     "postcss-size": "^1.0.0",
     "postcss-sorting": "^1.6.1",
     "sugarss": "^0.1.4"
+  },
+  "devDependencies": {
+    "postcss-property-lookup": "^1.2.1"
   }
 }

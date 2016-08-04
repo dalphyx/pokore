@@ -34,7 +34,7 @@ gulp.task('postcss', () => {
       pokore.extend,
       pokore.size,
       pokore.reset,
-      pokere.propertylookup
+      pokore.propertylookup
     ], {
       parser: pokore.sugarss
     }))

@@ -12,7 +12,7 @@ Collection for postcss nyan~
 * [postcss-sorting](https://github.com/hudochenkov/postcss-sorting)
 * [postcss-size](https://github.com/postcss/postcss-size)
 * [postcss-extend](https://github.com/travco/postcss-extend)
-* [postcss-easy-import](https://github.com/TrySound/postcss-easy-import)
+* [postcss-import](https://github.com/postcss/postcss-import)
 * [postcss-css-reset](https://github.com/baiyaaaaa/postcss-css-reset)
 * [postcss-color-alpha](https://github.com/avanes/postcss-color-alpha)
 * [postcss-property-lookup](https://github.com/simonsmith/postcss-property-lookup)
@@ -29,7 +29,7 @@ import rename from 'gulp-rename'
 gulp.task('postcss', () => {
   return gulp.src('./a.sss')
     .pipe(postcss([
-      pokore.import({ extensions: ['sss'] }),
+      pokore.import,
       pokore.colorAlpha,
       pokore.extend,
       pokore.size,

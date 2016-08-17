@@ -28,7 +28,7 @@
     "postcss-color-alpha": "^1.0.3",
     "postcss-css-reset": "^1.0.2",
     "postcss-extend": "^1.0.5",
-    "postcss-import": "^8.1.2",
+    "postcss-import": "8.1.0",
     "postcss-property-lookup": "^1.2.1",
     "postcss-size": "^1.0.0",
     "postcss-sorting": "^1.6.1",

@@ -16,6 +16,7 @@ Collection for postcss nyan~
 * [postcss-css-reset](https://github.com/baiyaaaaa/postcss-css-reset)
 * [postcss-color-alpha](https://github.com/avanes/postcss-color-alpha)
 * [postcss-property-lookup](https://github.com/simonsmith/postcss-property-lookup)
+* [postcss-nested](https://github.com/postcss/postcss-nested)
 
 ## Usage
 Gulp:
@@ -34,7 +35,8 @@ gulp.task('postcss', () => {
       pokore.extend,
       pokore.size,
       pokore.reset,
-      pokore.propertylookup
+      pokore.propertylookup,
+      pokore.nested
     ], {
       parser: pokore.sugarss
     }))
@@ -60,6 +62,9 @@ Sugarss file: a.sss:
   width: 40px
   margin-left: @width
   box-shadow: 0 0 1px #222.1
+
+  .d
+    width: 300px
 
 .b
   size: 30px
@@ -96,6 +101,10 @@ html {
   -moz-tab-size: 1px;
        tab-size: 1px;
   box-shadow: 0 0 1px rgba(34, 34, 34, 0.1)
+}
+
+.a .d {
+  width: 300px;
 }
 
 .b {

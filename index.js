@@ -1,11 +1,35 @@
-exports.autoprefixer = require('autoprefixer')
-exports.sugarss = require('sugarss')
-exports.sorting = require('postcss-sorting')
-exports.cssortie = require('cssortie')
-exports.size = require('postcss-size')
-exports.extend = require('postcss-extend')
-exports.reset = require('postcss-css-reset')
-exports.import = require('postcss-import')
-exports.coloralpha = exports.colorAlpha = require('postcss-color-alpha')
-exports.propertylookup = exports.propertyLookup = require('postcss-property-lookup')
-exports.nested = require('postcss-nested')
+const autoprefixer = require('autoprefixer')
+const sugarss = require('sugarss')
+const sorting = require('postcss-sorting')
+const cssortie = require('cssortie')
+const size = require('postcss-size')
+const extend = require('postcss-extend')
+const reset = require('postcss-css-reset')
+const postcssImport = require('postcss-import')
+const coloralpha = require('postcss-color-alpha')
+const propertylookup = require('postcss-property-lookup')
+const nested = require('postcss-nested')
+
+exports.autoprefixer = autoprefixer
+exports.sugarss = sugarss
+exports.sorting = sorting
+exports.cssortie = cssortie
+exports.size = size
+exports.extend = extend
+exports.reset = reset
+exports.import = postcssImport
+exports.coloralpha = exports.colorAlpha = coloralpha
+exports.propertylookup = exports.propertyLookup = propertylookup
+exports.nested = nested
+
+exports.preset = [
+  pokore.import,
+  pokore.colorAlpha,
+  pokore.extend,
+  pokore.size,
+  pokore.reset,
+  pokore.propertylookup,
+  pokore.autoprefixer,
+  pokore.nested,
+  pokore.sorting({ 'sort-order': cssortie })
+]

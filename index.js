@@ -23,13 +23,13 @@ exports.propertylookup = exports.propertyLookup = propertylookup
 exports.nested = nested
 
 exports.preset = [
-  pokore.import,
-  pokore.colorAlpha,
-  pokore.extend,
-  pokore.size,
-  pokore.reset,
-  pokore.propertylookup,
-  pokore.autoprefixer,
-  pokore.nested,
-  pokore.sorting({ 'sort-order': cssortie })
+  postcssImport,
+  colorAlpha,
+  extend,
+  size,
+  reset,
+  propertylookup,
+  autoprefixer,
+  nested,
+  sorting({ 'sort-order': cssortie })
 ]

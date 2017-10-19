@@ -24,7 +24,7 @@ exports.nested = nested
 
 exports.preset = [
   postcssImport,
-  colorAlpha,
+  coloralpha,
   extend,
   size,
   reset,
